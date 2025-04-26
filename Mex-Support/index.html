@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mex-support</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Add your custom styles here */
+  </style>
+</head>
+<body>
+
+  <!-- Live Chat Banner -->
+  <div class="live-chat-banner">
+    💬 Need help? Chat with our support team live!
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <h1 class="navbar-logo">Mex-support</h1>
+      <nav class="navbar-links">
+        <ul>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#support-form">Support</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#partnership">Partner</a></li>
+          <li><a href="#contact-info">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to Mex-support</h2>
+    <p>Your reliable partner for all customer support and business needs. Get support, grow together!</p>
+    <a href="#support-form" class="hero-button">Request Support</a>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about-us" class="about-us section">
+    <h2>About Us</h2>
+    <p>Mex-support is committed to delivering quick, helpful, and human-friendly customer service. We bridge the gap between clients and businesses with professional support solutions.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services section">
+    <h2>Our Services</h2>
+    <div class="service-item">
+      <h3>Technical Support</h3>
+      <p>24/7 assistance for all your technical needs and inquiries.</p>
+    </div>
+    <div class="service-item">
+      <h3>Customer Care Solutions</h3>
+      <p>Delivering top-notch customer care experiences for businesses and individuals.</p>
+    </div>
+    <div class="service-item">
+      <h3>Business Growth Support</h3>
+      <p>Helping businesses manage customer relations and improve trust.</p>
+    </div>
+  </section>
+
+  <!-- Support Form Section -->
+  <section id="support-form" class="support-form section">
+    <h2>Need Assistance?</h2>
+    <form id="supportForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <label for="payment-plan">Select a Service Plan:</label>
+      <select id="payment-plan" name="payment-plan" required>
+        <option value="">-- Choose a Plan --</option>
+        <option value="basic">🌟 Basic Support - ₦5,000 <small>(Response within 24hrs)</small></option>
+        <option value="premium">🚀 Premium Support - ₦10,000 <small>(Priority handling + Consultation)</small></option>
+        <option value="exclusive">👑 Exclusive Support - ₦15,000 <small>(VIP Access, Immediate Response, Business Advice)</small></option>
+      </select>
+
+      <button type="submit">Submit Request</button>
+    </form>
+
+    <div class="thank-you" id="thankYouMessage" style="display:none;">Thank you for reaching out! We’ll get back to you soon.</div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq-section section">
+    <h2>Frequently Asked Questions (FAQ)</h2>
+    <div class="faq-item">
+      <h3>How quickly do you respond?</h3>
+      <p>Depending on your selected plan, responses vary from instant (Exclusive) to within 24 hours (Basic).</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I upgrade my plan later?</h3>
+      <p>Yes! You can always upgrade by contacting our support team.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How do I partner with Mex-support?</h3>
+      <p>Scroll down to our Partnership section and send us a message!</p>
+    </div>
+  </section>
+
+  <!-- Partnership Section -->
+  <section id="partnership" class="partnership section">
+    <h2>Partner with Mex-support</h2>
+    <p>We welcome businesses, entrepreneurs, and tech enthusiasts to collaborate with us. Let’s build better solutions together!</p>
+    <a href="#support-form" class="partner-button">Apply to Partner</a>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials section">
+    <h2>What People Are Saying</h2>
+    <div class="testimonial-item">
+      <p>“Mex-support helped us set up our customer care. Fast and very professional!”</p>
+      <h4>— Sarah A., Business Owner</h4>
+    </div>
+    <div class="testimonial-item">
+      <p>“I love the VIP plan. Immediate replies, good advice. Highly recommended.”</p>
+      <h4>— Kelvin M., Entrepreneur</h4>
+    </div>
+  </section>
+
+  <!-- WhatsApp Contact Section -->
+  <section class="whatsapp-contact section">
+    <a href="https://wa.me/2349042704291?text=Hello%20Mex-support%20Team%20I%20need%20assistance" target="_blank">
+      <button class="whatsapp-button">
+        📲 Chat with us on WhatsApp
+      </button>
+    </a>
+  </section>
+
+  <!-- Contact Info Section -->
+  <section id="contact-info" class="contact-info section">
+    <h2>Contact Info</h2>
+    <p>Email: <a href="mailto:michaelmonday1442@gmail.com">michaelmonday1442@gmail.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Mex-support. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Scroll-to-top button functionality
+    const scrollBtn = document.createElement('button');
+    scrollBtn.id = 'scrollToTop';
+    scrollBtn.textContent = '↑';
+    scrollBtn.style.display = 'none';
+    scrollBtn.style.position = 'fixed';
+    scrollBtn.style.bottom = '20px';
+    scrollBtn.style.right = '20px';
+    scrollBtn.style.padding = '10px';
+    scrollBtn.style.fontSize = '18px';
+    scrollBtn.style.borderRadius = '50%';
+    scrollBtn.style.backgroundColor = '#007BFF';
+    scrollBtn.style.color = 'white';
+    scrollBtn.style.border = 'none';
+    scrollBtn.style.cursor = 'pointer';
+    document.body.appendChild(scrollBtn);
+
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) {
+        scrollBtn.style.display = 'block';
+      } else {
+        scrollBtn.style.display = 'none';
+      }
+    });
+
+    scrollBtn.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Form handling for the support form
+    const supportForm = document.getElementById('supportForm');
+    const thankYouMessage = document.getElementById('thankYouMessage');
+
+    supportForm.addEventListener('submit', function(event) {
+      event.preventDefault();  // Prevent form submission, handle it with JavaScript
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const plan = document.getElementById('payment-plan').value;
+
+      // Validation
+      if (name === "" || email === "" || message === "" || plan === "") {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      // Simulate submitting the form data (e.g., logging or sending to server)
+      console.log("Support Request Submitted:");
+      console.log("Name:", name);
+      console.log("Email:", email);
+      console.log("Plan:", plan);
+      console.log("Message:", message);
+
+      // Show thank you message and hide the form
+      thankYouMessage.style.display = 'block';
+      supportForm.style.display = 'none';
+
+      // Optionally reset the form after submission
+      supportForm.reset();
+    });
+
+    // Handle FAQ accordion-style toggle
+    const faqItems = document.querySelectorAll('.faq-item h3');
+    faqItems.forEach(item => {
+      item.addEventListener('click', function() {
+        const content = item.nextElementSibling;
+        content.style.display = content.style.display === 'none' ? 'block' : 'none';
+      });
+    });
+
+    // WhatsApp button functionality
+    const whatsappButton = document.querySelector('.whatsapp-button');
+    if (whatsappButton) {
+      whatsappButton.addEventListener('click', function() {
+        window.open("https://wa.me/2349042704291?text=Hello%20Mex-support%20Team%20I%20need%20assistance", "_blank");
+      });
+    }
+
+  </script>
+
+</body>
+</html>
